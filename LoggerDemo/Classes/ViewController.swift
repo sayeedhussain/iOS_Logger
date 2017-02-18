@@ -13,12 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //configuration
-        Logger.fileLogging(enabled: true)
-        let path = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first!
-        Logger.fileLogging(dir: path, file: "log.txt")
-        
+                
         //logging
         Logger.Log("Hello")
     }
