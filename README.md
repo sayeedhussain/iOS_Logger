@@ -1,5 +1,5 @@
 # Logger
-A log utility for better logging in iOS.
+A thread-safe logging utility for better logging in iOS.
 
 #### Usage
 
