@@ -8,7 +8,6 @@
 
 import Foundation
 
-protocol StdErrLoggerInterface {
+protocol StdErrLoggerInterface: LoggerInterface {
     
-    func logMessage(_ message: String)
 }

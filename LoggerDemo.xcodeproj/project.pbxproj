@@ -20,6 +20,8 @@
 		361792771E50A506007A0846 /* StdErrLoggerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361792701E50A506007A0846 /* StdErrLoggerInterface.swift */; };
 		3617927B1E50A536007A0846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361792791E50A536007A0846 /* AppDelegate.swift */; };
 		3617927C1E50A536007A0846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3617927A1E50A536007A0846 /* ViewController.swift */; };
+		3685464F1E58BA3F007C025C /* LoggerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685464E1E58BA3F007C025C /* LoggerInterface.swift */; };
+		368546511E58BE52007C025C /* FileLoggerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368546501E58BE52007C025C /* FileLoggerPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		361792781E50A52C007A0846 /* LoggerDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoggerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		361792791E50A536007A0846 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3617927A1E50A536007A0846 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3685464E1E58BA3F007C025C /* LoggerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerInterface.swift; sourceTree = "<group>"; };
+		368546501E58BE52007C025C /* FileLoggerPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoggerPath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +148,10 @@
 				3617926E1E50A506007A0846 /* Logger.swift */,
 				361792691E50A506007A0846 /* FileLogger.swift */,
 				3617926F1E50A506007A0846 /* StdErrLogger.swift */,
+				3685464E1E58BA3F007C025C /* LoggerInterface.swift */,
 				3617926C1E50A506007A0846 /* FileLoggerInterface.swift */,
 				361792701E50A506007A0846 /* StdErrLoggerInterface.swift */,
+				368546501E58BE52007C025C /* FileLoggerPath.swift */,
 				3617926A1E50A506007A0846 /* FileLoggerC.c */,
 				3617926B1E50A506007A0846 /* FileLoggerC.h */,
 				3617926D1E50A506007A0846 /* Formatter.swift */,
@@ -260,10 +266,12 @@
 				3617927B1E50A536007A0846 /* AppDelegate.swift in Sources */,
 				361792751E50A506007A0846 /* Logger.swift in Sources */,
 				361792731E50A506007A0846 /* FileLoggerInterface.swift in Sources */,
+				3685464F1E58BA3F007C025C /* LoggerInterface.swift in Sources */,
 				3617927C1E50A536007A0846 /* ViewController.swift in Sources */,
 				361792711E50A506007A0846 /* FileLogger.swift in Sources */,
 				361792761E50A506007A0846 /* StdErrLogger.swift in Sources */,
 				361792741E50A506007A0846 /* Formatter.swift in Sources */,
+				368546511E58BE52007C025C /* FileLoggerPath.swift in Sources */,
 				361792771E50A506007A0846 /* StdErrLoggerInterface.swift in Sources */,
 				361792721E50A506007A0846 /* FileLoggerC.c in Sources */,
 			);

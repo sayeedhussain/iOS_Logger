@@ -8,27 +8,19 @@
 
 import Foundation
 
-class FileLogger {
+final class FileLogger {
     
     fileprivate static var filePath: String?
     
     required init?(dir: String, file: String) {
-        
-        if file.isEmpty {
+    
+        let fileLoggerPath = FileLoggerPath()
+
+        guard let path = try? fileLoggerPath.getPath(withDir: dir, file: file) else {
             return nil
         }
         
-        var isDir: ObjCBool = ObjCBool(false)
-        
-        if !FileManager.default.fileExists(atPath: dir, isDirectory: &isDir) {
-            return nil
-        }
-        
-        if !isDir.boolValue {
-            return nil
-        }
-        
-        FileLogger.filePath = (dir as NSString).appendingPathComponent(file) as String
+        FileLogger.filePath = path
         FileLogger.once
     }
     
@@ -45,9 +37,5 @@ extension FileLogger: FileLoggerInterface {
     
     func clearLogs() -> Bool {
         return clearLogFileC() == 1
-    }
-    
-    func logFilePath() -> String {
-        return FileLogger.filePath!
-    }
+    }    
 }

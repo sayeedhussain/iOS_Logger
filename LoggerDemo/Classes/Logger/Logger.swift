@@ -10,11 +10,12 @@ import Foundation
 
 class Logger {
     
+    private static let formatter = Formatter()
+    private static var fileLogging = false
+
     private static var file: String?
     private static var dir: String?
-    private static var fileLogging = false
     
-    private static let formatter = Formatter()
     private static let stderrLogger: StdErrLoggerInterface = StdErrLogger()
     private static let fileLogger: FileLoggerInterface? = {
        
@@ -41,7 +42,7 @@ class Logger {
         file = _file
     }
 
-    static func Log(_ object: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
+    static func Log(_ object: Any = "", _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         
         let message1 = formatter.formattedMessageStdErr(forObject: object, file: file, function: function, line: line)
         stderrLogger.logMessage(message1)

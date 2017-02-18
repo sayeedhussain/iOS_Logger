@@ -8,13 +8,9 @@
 
 import Foundation
 
-protocol FileLoggerInterface {
+protocol FileLoggerInterface: LoggerInterface {
     
     init?(dir: String, file: String)
     
-    func logMessage(_ message: String)
-    
-    func clearLogs() -> Bool
-    
-    func logFilePath() -> String
+    func clearLogs() -> Bool    
 }
