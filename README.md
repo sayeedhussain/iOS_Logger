@@ -19,5 +19,6 @@ Logger must be set up for file logging, preferably in AppDelegate (applicationDi
 * prints **Sat Feb 18 23:38:37 2017 ViewController.swift(viewDidLoad())[23]: Hello** to log.txt file stored in /Caches dir in app sandbox.
 
 #### Installation
-Download the zip and copy /Logger folder to you project. 
+Download the zip and copy /Logger folder to you project.
+Add this line to your bridging header file **#import "FileLoggerC.h"**. If it doesn't exist, you need to create one.
 
